@@ -1,0 +1,11 @@
+#use_frameworks!
+
+target 'GZIMPaySmartPOS_Example' do
+  pod 'GZIMPaySmartPOS', :path => '../'
+
+  target 'GZIMPaySmartPOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
