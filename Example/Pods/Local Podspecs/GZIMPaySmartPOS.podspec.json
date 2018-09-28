@@ -28,5 +28,12 @@
     "SocketRocket": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "GTM64",
+      "source_files": "GZIMPaySmartPOS/Classes/GTM64/**/*",
+      "requires_arc": false
+    }
+  ]
 }

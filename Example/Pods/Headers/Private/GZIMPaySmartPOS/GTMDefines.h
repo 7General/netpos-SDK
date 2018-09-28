@@ -1,0 +1,1 @@
+../../../../../GZIMPaySmartPOS/Classes/GTMDefines.h

@@ -1,5 +1,8 @@
 PODS:
   - GZIMPaySmartPOS (0.0.1):
+    - GZIMPaySmartPOS/GTM64 (= 0.0.1)
+    - SocketRocket
+  - GZIMPaySmartPOS/GTM64 (0.0.1):
     - SocketRocket
   - SocketRocket (0.5.1)
 
@@ -15,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GZIMPaySmartPOS: 26a598a312301eb7837a1354dd14f9a5346eb922
+  GZIMPaySmartPOS: c226f5ea78ce20fd61b659951298e29d3565691f
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
 PODFILE CHECKSUM: 50c9701ef58ec5c8f2bd9a1a80786d17d235cd8a

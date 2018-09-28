@@ -8,13 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		224E68AB215CB56F006E6088 /* GZIMPayMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68AA215CB56F006E6088 /* GZIMPayMainViewController.m */; };
-		224E68B5215CDA43006E6088 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68AE215CDA42006E6088 /* NSData+CommonCrypto.m */; };
-		224E68B6215CDA43006E6088 /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68AF215CDA42006E6088 /* AES.m */; };
-		224E68B7215CDA43006E6088 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68B1215CDA42006E6088 /* NSData+Base64.m */; };
-		224E68B8215CDA43006E6088 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68B2215CDA42006E6088 /* NSString+Base64.m */; };
 		224E68BB215CDC35006E6088 /* NSDictionary+json.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68BA215CDC35006E6088 /* NSDictionary+json.m */; };
-		224E68CE215CF8A6006E6088 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68CC215CF8A6006E6088 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		224E68DA215D02A5006E6088 /* GZIMPaySocketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68D9215D02A5006E6088 /* GZIMPaySocketTool.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -47,21 +41,8 @@
 /* Begin PBXFileReference section */
 		224E68A9215CB56F006E6088 /* GZIMPayMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZIMPayMainViewController.h; sourceTree = "<group>"; };
 		224E68AA215CB56F006E6088 /* GZIMPayMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZIMPayMainViewController.m; sourceTree = "<group>"; };
-		224E68AD215CDA42006E6088 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		224E68AE215CDA42006E6088 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
-		224E68AF215CDA42006E6088 /* AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES.m; sourceTree = "<group>"; };
-		224E68B0215CDA42006E6088 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		224E68B1215CDA42006E6088 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		224E68B2215CDA42006E6088 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		224E68B3215CDA43006E6088 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
-		224E68B4215CDA43006E6088 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
 		224E68B9215CDC35006E6088 /* NSDictionary+json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+json.h"; sourceTree = "<group>"; };
 		224E68BA215CDC35006E6088 /* NSDictionary+json.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+json.m"; sourceTree = "<group>"; };
-		224E68CC215CF8A6006E6088 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		224E68CD215CF8A6006E6088 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		224E68CF215CF8D0006E6088 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		224E68D8215D02A5006E6088 /* GZIMPaySocketTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZIMPaySocketTool.h; sourceTree = "<group>"; };
-		224E68D9215D02A5006E6088 /* GZIMPaySocketTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZIMPaySocketTool.m; sourceTree = "<group>"; };
 		343A88D235777448406D4356 /* Pods-GZIMPaySmartPOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZIMPaySmartPOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZIMPaySmartPOS_Example/Pods-GZIMPaySmartPOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GZIMPaySmartPOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZIMPaySmartPOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,33 +101,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		224E68AC215CDA2F006E6088 /* AES */ = {
-			isa = PBXGroup;
-			children = (
-				224E68CF215CF8D0006E6088 /* GTMDefines.h */,
-				224E68CD215CF8A6006E6088 /* GTMBase64.h */,
-				224E68CC215CF8A6006E6088 /* GTMBase64.m */,
-				224E68B3215CDA43006E6088 /* AES.h */,
-				224E68AF215CDA42006E6088 /* AES.m */,
-				224E68AD215CDA42006E6088 /* NSData+Base64.h */,
-				224E68B1215CDA42006E6088 /* NSData+Base64.m */,
-				224E68B4215CDA43006E6088 /* NSData+CommonCrypto.h */,
-				224E68AE215CDA42006E6088 /* NSData+CommonCrypto.m */,
-				224E68B0215CDA42006E6088 /* NSString+Base64.h */,
-				224E68B2215CDA42006E6088 /* NSString+Base64.m */,
-			);
-			name = AES;
-			sourceTree = "<group>";
-		};
-		224E68D7215D028F006E6088 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				224E68D8215D02A5006E6088 /* GZIMPaySocketTool.h */,
-				224E68D9215D02A5006E6088 /* GZIMPaySocketTool.m */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -184,8 +138,6 @@
 		6003F593195388D20070C39A /* Example for GZIMPaySmartPOS */ = {
 			isa = PBXGroup;
 			children = (
-				224E68D7215D028F006E6088 /* Common */,
-				224E68AC215CDA2F006E6088 /* AES */,
 				6003F59C195388D20070C39A /* GZIMPayAppDelegate.h */,
 				6003F59D195388D20070C39A /* GZIMPayAppDelegate.m */,
 				224E68A9215CB56F006E6088 /* GZIMPayMainViewController.h */,
@@ -419,12 +371,6 @@
 				6003F59E195388D20070C39A /* GZIMPayAppDelegate.m in Sources */,
 				224E68BB215CDC35006E6088 /* NSDictionary+json.m in Sources */,
 				6003F5A7195388D20070C39A /* GZIMPayViewController.m in Sources */,
-				224E68B5215CDA43006E6088 /* NSData+CommonCrypto.m in Sources */,
-				224E68B7215CDA43006E6088 /* NSData+Base64.m in Sources */,
-				224E68B8215CDA43006E6088 /* NSString+Base64.m in Sources */,
-				224E68DA215D02A5006E6088 /* GZIMPaySocketTool.m in Sources */,
-				224E68B6215CDA43006E6088 /* AES.m in Sources */,
-				224E68CE215CF8A6006E6088 /* GTMBase64.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				224E68AB215CB56F006E6088 /* GZIMPayMainViewController.m in Sources */,
 			);

@@ -1,0 +1,1 @@
+../../../../../GZIMPaySmartPOS/Classes/GZIMPaySocketTool.h

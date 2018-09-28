@@ -11,13 +11,15 @@
 #define AP_BUTTON_HEIGHT  (60.0f)
 
 #import "GZIMPayMainViewController.h"
+#import <GZIMPaySmartPOS/AES.h>
+#import <GZIMPaySmartPOS/GZIMPaySocketTool.h>
+#import <GZIMPaySmartPOS/NSDictionary+json.h>
 
-#import "AES.h"
-#import "NSDictionary+json.h"
-#import "GZIMPaySocketTool.h"
+
 
 @interface GZIMPayMainViewController ()
 
+@property (nonatomic, strong) UITextView * logInfo;
 
 @end
 
@@ -34,17 +36,69 @@
     
     originalPosY += (AP_BUTTON_HEIGHT + 20);
     [self generateBtnWithTitle:@"设备存活" selector:@selector(DeviceAlive) posy:originalPosY];
+
+    originalPosY += (AP_BUTTON_HEIGHT + 20);
+    [self generateBtnWithTitle:@"消费接口" selector:@selector(shopAction) posy:originalPosY];
     
-//    NSString * text = @"6666666666";
-//    NSString * encryText = [AES encrypt:text password:@"1234567812345678"];
-//    NSLog(@"--->>>加密数据%@",encryText);
-//    NSString * decryText = [AES decrypt:encryText password:@"1234567812345678"];
-//    NSLog(@"--->>>>解密数据%@",decryText);
+    originalPosY += (AP_BUTTON_HEIGHT + 20);
+    [self generateBtnWithTitle:@"撤销接口" selector:@selector(backAction) posy:originalPosY];
     
+    originalPosY += (AP_BUTTON_HEIGHT + 20);
+    [self generateBtnWithTitle:@"取消交易接口" selector:@selector(cancleAction) posy:originalPosY];
     
+    self.logInfo = [[UITextView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 150, self.view.frame.size.width, 150)];
+    self.logInfo.textColor = [UIColor grayColor];
+    [self.view addSubview:self.logInfo];
     
     
 }
+- (void)cancleAction {
+    NSDictionary * cancleInfo =
+        @{
+        @"directive": @"IpCancelPay",
+        @"data":
+            @{
+            @"mhtOrderNo": @"82ur32jr923jr32rj23r2"
+            }
+        };
+    NSString * encryText = [AES encrypt:[cancleInfo gzim_toJsonString]];
+    [[GZIMPaySocketTool instance] sendData:encryText];
+}
+- (void)backAction {
+    NSDictionary * backinfo =
+    @{
+        @"directive": @"IpPayRollback",
+        @"transData":
+            @{
+            @"ipOrderNo": @"82ur32jr923jr32rj23r2"
+            },
+        @"mhtCustomData":
+            @{
+            @"mhtReserved": @"xxxxxxxxxxxxx"
+            }
+        };
+    NSString * encryText = [AES encrypt:[backinfo gzim_toJsonString]];
+    [[GZIMPaySocketTool instance] sendData:encryText];
+    
+}
+- (void)shopAction {
+    NSDictionary * shopInfo = @{@"directive": @"IpPay",
+                                @"transData":
+                                    @{
+                                        @"mhtOrderNo": @"fdsfsfsdfsfsfs",
+                                        @"payType": @"01",
+                                        @"orderPrice": @"1",
+                                        @"orderName": @"零售 PC 订单"
+                                        },
+        @"mhtCustomData":
+                                    @{
+                                        @"mhtReserved": @"xxxxxxxxxxxxx"
+                                    }
+                                };
+    NSString * encryText = [AES encrypt:[shopInfo gzim_toJsonString]];
+    [[GZIMPaySocketTool instance] sendData:encryText];
+}
+
 - (void)DeviceAlive {
     NSDictionary * deviceAlive = @{@"directive":@"IpAlive",@"call":@"ping"};
     NSString * encryText = [AES encrypt:[deviceAlive gzim_toJsonString]];
@@ -53,9 +107,26 @@
 
 /* 设备激活 */
 - (void)createLongLink {
-     [[GZIMPaySocketTool instance] WebSocketOpenWithURLString:@"ws://172.20.10.7:9100"];
+     [[GZIMPaySocketTool instance] WebSocketOpenWithIP:@"172.20.10.7" withSocketDelegate:(id<webSocketContectDidDelegate>)self];
 }
 
+
+#pragma mark - SocketDelegate
+/* 长连接连接状态 */
+- (void)webSocketContentStatusDidChanged:(SRReadyState)status {
+    NSLog(@"----------------%ld",status);
+    if (SR_OPEN == status) {
+        NSLog(@"-连接成功");
+    } else {
+        NSLog(@"-连接非成功");
+    }
+}
+/* 接受数据 */
+- (void)websocketDidReceiveMessage:(id)message {
+    NSLog(@"--接受数据：%@",message);
+    NSLog(@"---->>%@",[AES decrypt:message]);
+    self.logInfo.text = [AES decrypt:message];
+}
 
 
 

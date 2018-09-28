@@ -24,7 +24,13 @@ TODO: Add long description of the pod here.
      'GZIMPaySmartPOS' => ['GZIMPaySmartPOS/Assets/*']
    }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'SocketRocket'
+   
+   s.subspec 'GTM64' do |gtm|
+       gtm.source_files = 'GZIMPaySmartPOS/Classes/GTM64/**/*'
+       gtm.requires_arc = false
+   end
+
+   
+   
 end

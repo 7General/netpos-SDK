@@ -7,94 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A32E368B21AC5E9C99429314B8BE0A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F6DD994291AA39A94BEECAFAF0D785 /* Security.framework */; };
-		44F083045697D5BFFA0C301F7A3D4B99 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD643BBD53C0BC9592126E22C82B77A /* SocketRocket-dummy.m */; };
+		199A5C26285E082CF9CE8AB594EEF6FC /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF4E5EED2BE7953295FCE1F8F29887B /* SRWebSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1DEFB7A74C87AC9A128DA9CC19BAE7B0 /* NSDictionary+json.h in Headers */ = {isa = PBXBuildFile; fileRef = 917969ACDEF8BC1D825620AA09A4CFF9 /* NSDictionary+json.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24350F10A2186BFF71C403DE33FF86DC /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A424E53CAE9EB33258804F28A52CB4 /* AES.m */; };
+		296BBD4263588E42F7B2718BA9EA3648 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 86190A508770AFDC735DED84D43779C9 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		405F3055B2F448990B55F5D5537BC0D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3725257C79D0C80F87B9E2B291C17A /* Foundation.framework */; };
 		58273FD89C0F3DB844C092F45F87B46D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3725257C79D0C80F87B9E2B291C17A /* Foundation.framework */; };
-		5A3376C6CD10EE14A6A4D19DCB6B4F34 /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E3AD439A80B2F1ABD299002CAA341262 /* SocketRocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		858286E7DCE1CA1915DE20294E7A9CEC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A847C3B26F9C9E99A5ACEACF501F86DD /* CFNetwork.framework */; };
+		5A58E9EB9AAF60F5E15B3113C0ABF168 /* NSDictionary+json.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A1A66C251D91C068B0902809F3409C /* NSDictionary+json.m */; };
+		5AE693C8B01E7C00C8DCF08BFB2E0BF0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A847C3B26F9C9E99A5ACEACF501F86DD /* CFNetwork.framework */; };
+		664CD174AD904F752D4B62E332206DE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3725257C79D0C80F87B9E2B291C17A /* Foundation.framework */; };
+		6902945699ABA76E04FDCB4731DB51CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3725257C79D0C80F87B9E2B291C17A /* Foundation.framework */; };
+		7E63266DEF1D7EEDDCECD34233606E42 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 612F5E58E6A7097998724BA060AF7F8D /* NSData+CommonCrypto.m */; };
+		7F8DCADE79ABC0751843B25369C8AC0D /* GZIMPaySocketTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 262462D958990800FBDEDA35BAA9DAB5 /* GZIMPaySocketTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81EA476D1DFE72CE8551E9AE26F1249E /* GZIMPaySmartPOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB249ACBAAE873A01A4DB26E52878D1 /* GZIMPaySmartPOS-dummy.m */; };
+		8BE4B25C86EE9FDDD3D0D9E131A3E3ED /* GZIMPaySocketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 143374444D34C325E76F253E48E575B1 /* GZIMPaySocketTool.m */; };
+		8C914FEBA3ABB00C3A1077CB4265438E /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E3AD439A80B2F1ABD299002CAA341262 /* SocketRocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95FB63C097EB581919A18C0D3FF171D1 /* AES.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC8AA612AE99185F6808A4B837E571E /* AES.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9DC5D0D2B37333FC99022485C0ABC09B /* Pods-GZIMPaySmartPOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19408F1B714B65E1760C3069BD19427E /* Pods-GZIMPaySmartPOS_Tests-dummy.m */; };
-		A9B4409052AACF2DFA4A70244B486B52 /* Pods-GZIMPaySmartPOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E947A245E351058ED4FDEF2E35D580 /* Pods-GZIMPaySmartPOS_Example-dummy.m */; };
-		D6C0DB4D32E86AB3BE7F62BF2AB3EB4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3725257C79D0C80F87B9E2B291C17A /* Foundation.framework */; };
-		DA1C01F9A8DDD735E0A7CA7117E7A5DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3725257C79D0C80F87B9E2B291C17A /* Foundation.framework */; };
-		DDDC8D827B843102F3400E650A147FA8 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095759AC714C71F66EB69CA0E335A64 /* SRWebSocket.m */; };
-		E75F053672E6C9B65EAF08E60F7F9D25 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF4E5EED2BE7953295FCE1F8F29887B /* SRWebSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9EB6BC43D2AC0F2AA60180FA8EEBBAE1 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD643BBD53C0BC9592126E22C82B77A /* SocketRocket-dummy.m */; };
+		B2E10568DFE9E99402D6884DA936A341 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A0EE842027C3669D9B4D15C89D9DEC /* GTMDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B51034D93C1DD8199EAEA4E46C752CBD /* Pods-GZIMPaySmartPOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E947A245E351058ED4FDEF2E35D580 /* Pods-GZIMPaySmartPOS_Example-dummy.m */; };
+		D9FC5A912FF641CBFD0B3FAE4C333934 /* NSData+CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E845113514B9DA3035E693A5161439A /* NSData+CommonCrypto.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E474A8FD340044D4E8805E8AD2D36683 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = FE973D1A5083590A766B97BD5E6C293B /* GTMBase64.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F71AF2FBC06A2DD0F30F12E15CBA2F54 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F6DD994291AA39A94BEECAFAF0D785 /* Security.framework */; };
+		FDD4FE71D2442399A91758E862062E9F /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1095759AC714C71F66EB69CA0E335A64 /* SRWebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9194A8880F42759298C5FC62F9C5925E /* PBXContainerItemProxy */ = {
+		9822C0EA1CA00EA92B20BC4B67D39836 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 12F2F0345AACFDAA23C615995E569123;
+			remoteGlobalIDString = 905A8214FE4F7AEA6609BF491789BE73;
+			remoteInfo = SocketRocket;
+		};
+		D74216A01439C4865D35D673E77EA7F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2D9B0E4FCDE85CB73A28E703B47E9D;
 			remoteInfo = "GZIMPaySmartPOS-GZIMPaySmartPOS";
 		};
-		DAA0F1BCCEBD117BECAE9B540893D1D3 /* PBXContainerItemProxy */ = {
+		DF9C7DA5C4F733DF2711905DCBF2B312 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9855DB0E35100151C280FFD6D28C8DB4;
+			remoteGlobalIDString = B89BE311AD707DE0EBA631982F463745;
+			remoteInfo = GZIMPaySmartPOS;
+		};
+		F2BBBF0B19CAAF975882D692B36BD680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 905A8214FE4F7AEA6609BF491789BE73;
 			remoteInfo = SocketRocket;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07DD74E94AA94D34CF23218758426BD1 /* GZIMPaySmartPOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = GZIMPaySmartPOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0A6603BCA96CB4AD5185CE6F6ED9C92E /* Pods-GZIMPaySmartPOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GZIMPaySmartPOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		0E78222B6F60401268F0DB887568C456 /* Pods-GZIMPaySmartPOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GZIMPaySmartPOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1095759AC714C71F66EB69CA0E335A64 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
-		190263102F9D4D80194D12FFA08B7E49 /* libPods-GZIMPaySmartPOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GZIMPaySmartPOS_Example.a"; path = "libPods-GZIMPaySmartPOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		143374444D34C325E76F253E48E575B1 /* GZIMPaySocketTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GZIMPaySocketTool.m; path = GZIMPaySmartPOS/Classes/GZIMPaySocketTool.m; sourceTree = "<group>"; };
+		157AFE69AF4DDABBE6EDF260EF1BB3E8 /* libPods-GZIMPaySmartPOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GZIMPaySmartPOS_Tests.a"; path = "libPods-GZIMPaySmartPOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19408F1B714B65E1760C3069BD19427E /* Pods-GZIMPaySmartPOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GZIMPaySmartPOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		1AD643BBD53C0BC9592126E22C82B77A /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		262462D958990800FBDEDA35BAA9DAB5 /* GZIMPaySocketTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GZIMPaySocketTool.h; path = GZIMPaySmartPOS/Classes/GZIMPaySocketTool.h; sourceTree = "<group>"; };
+		29A0EE842027C3669D9B4D15C89D9DEC /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = GZIMPaySmartPOS/Classes/GTMDefines.h; sourceTree = "<group>"; };
 		3B99DBA666A7D2C2EE7BF45C835DEC26 /* Pods-GZIMPaySmartPOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GZIMPaySmartPOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		45220C7B26C3977F4FEBD9632F28B190 /* Pods-GZIMPaySmartPOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GZIMPaySmartPOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4892444E7011BA22186CDD314A592936 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSocketRocket.a; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F6DD994291AA39A94BEECAFAF0D785 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		52F851697EEA091001CB911F4E8B63E4 /* libPods-GZIMPaySmartPOS_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GZIMPaySmartPOS_Example.a"; path = "libPods-GZIMPaySmartPOS_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A424E53CAE9EB33258804F28A52CB4 /* AES.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AES.m; path = GZIMPaySmartPOS/Classes/AES.m; sourceTree = "<group>"; };
 		5AF4E5EED2BE7953295FCE1F8F29887B /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
-		69B4CE6E14FFF1669919A25D761CDAE7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		612F5E58E6A7097998724BA060AF7F8D /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+CommonCrypto.m"; path = "GZIMPaySmartPOS/Classes/NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		69BF7FCC56A87EE8B45CB77E9103C870 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		78A1A66C251D91C068B0902809F3409C /* NSDictionary+json.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+json.m"; path = "GZIMPaySmartPOS/Classes/NSDictionary+json.m"; sourceTree = "<group>"; };
 		81ED5606DF56484C11C9E852E586A23C /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
-		8AD8BE8C014CBB70C5D4F27784E61B40 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		86190A508770AFDC735DED84D43779C9 /* GTMBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		86B0FEEE73596D94285115F353451EED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8AB249ACBAAE873A01A4DB26E52878D1 /* GZIMPaySmartPOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GZIMPaySmartPOS-dummy.m"; sourceTree = "<group>"; };
+		8E845113514B9DA3035E693A5161439A /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+CommonCrypto.h"; path = "GZIMPaySmartPOS/Classes/NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		917969ACDEF8BC1D825620AA09A4CFF9 /* NSDictionary+json.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+json.h"; path = "GZIMPaySmartPOS/Classes/NSDictionary+json.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E1D8C84D53877B9C5E1EE6DB54D8FB9 /* Pods-GZIMPaySmartPOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GZIMPaySmartPOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9E3725257C79D0C80F87B9E2B291C17A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A074C5FDDC18C5986AEE00DFF98A7018 /* Pods-GZIMPaySmartPOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GZIMPaySmartPOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A2CCA9A9C00BFC6AD07EC37A23FD793B /* ResourceBundle-GZIMPaySmartPOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GZIMPaySmartPOS-Info.plist"; sourceTree = "<group>"; };
 		A847C3B26F9C9E99A5ACEACF501F86DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		AE9D0FDD768B0FEC9C18088F1E8FE673 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSocketRocket.a; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8CF704B456F316876FE9BF50FDD811 /* ResourceBundle-GZIMPaySmartPOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GZIMPaySmartPOS-Info.plist"; sourceTree = "<group>"; };
 		B24E0A39C14EADD8B18F7B3AFFF69266 /* Pods-GZIMPaySmartPOS_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GZIMPaySmartPOS_Tests-resources.sh"; sourceTree = "<group>"; };
-		BB36F42645724F98922262B6E0979214 /* GZIMPaySmartPOS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GZIMPaySmartPOS.bundle; path = "GZIMPaySmartPOS-GZIMPaySmartPOS.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0DA74404C0FAFA1E31BE71C9D498A7 /* Pods-GZIMPaySmartPOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GZIMPaySmartPOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3EF081D233AA6A5BC114F21B6FC4055 /* libPods-GZIMPaySmartPOS_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GZIMPaySmartPOS_Tests.a"; path = "libPods-GZIMPaySmartPOS_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25FBD43C525FE66B8C6DB3601668FD1 /* libGZIMPaySmartPOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGZIMPaySmartPOS.a; path = libGZIMPaySmartPOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DD33D55AC2B54C693ECB53983C8B32 /* Pods-GZIMPaySmartPOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GZIMPaySmartPOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCC8AA612AE99185F6808A4B837E571E /* AES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AES.h; path = GZIMPaySmartPOS/Classes/AES.h; sourceTree = "<group>"; };
+		CE49A74797C4810F7BE7E52C1234110C /* GZIMPaySmartPOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GZIMPaySmartPOS-prefix.pch"; sourceTree = "<group>"; };
 		CEF8BD0775B0243A445FC3D0F6E04C9F /* Pods-GZIMPaySmartPOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GZIMPaySmartPOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D271E1ACC894BAE9E6FC8AAAF017C9F4 /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
-		D413B1570433BED21632453DE9C28FCA /* GZIMPaySmartPOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = GZIMPaySmartPOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4F749EB3F61BB0F04C36A7C601C55CF /* GZIMPaySmartPOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GZIMPaySmartPOS.xcconfig; sourceTree = "<group>"; };
 		D6746E2C08A05267C5F649E9B0C12CC2 /* Pods-GZIMPaySmartPOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GZIMPaySmartPOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3AD439A80B2F1ABD299002CAA341262 /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
 		E7E947A245E351058ED4FDEF2E35D580 /* Pods-GZIMPaySmartPOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GZIMPaySmartPOS_Example-dummy.m"; sourceTree = "<group>"; };
 		E8A01D16B53F49D1AED69CA832276D90 /* Pods-GZIMPaySmartPOS_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GZIMPaySmartPOS_Example-resources.sh"; sourceTree = "<group>"; };
+		EA83EF5BAF7833A7EC50583345CC5677 /* GZIMPaySmartPOS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GZIMPaySmartPOS.bundle; path = "GZIMPaySmartPOS-GZIMPaySmartPOS.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE973D1A5083590A766B97BD5E6C293B /* GTMBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17B23D009961F8EC7AF154E6AE53A822 /* Frameworks */ = {
+		2001E55E3CE2B01F86E5EBD579072A52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6902945699ABA76E04FDCB4731DB51CF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		239B7CFD5A56D747D35D785B5B42F3BC /* Frameworks */ = {
+		5A369D829CE40B8F77B75B51DC886D61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C0DB4D32E86AB3BE7F62BF2AB3EB4E /* Foundation.framework in Frameworks */,
+				664CD174AD904F752D4B62E332206DE9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FB44DA6B35367E7C6DEB49C173EF246 /* Frameworks */ = {
+		75D428CA410CDA9F7D4D2E10CEEF89EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				858286E7DCE1CA1915DE20294E7A9CEC /* CFNetwork.framework in Frameworks */,
-				DA1C01F9A8DDD735E0A7CA7117E7A5DA /* Foundation.framework in Frameworks */,
-				1A32E368B21AC5E9C99429314B8BE0A2 /* Security.framework in Frameworks */,
+				5AE693C8B01E7C00C8DCF08BFB2E0BF0 /* CFNetwork.framework in Frameworks */,
+				405F3055B2F448990B55F5D5537BC0D3 /* Foundation.framework in Frameworks */,
+				F71AF2FBC06A2DD0F30F12E15CBA2F54 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +146,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				58273FD89C0F3DB844C092F45F87B46D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09D252F77AD19A56BBF2C23ED3DFFB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,23 +178,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		211BB7C773AAC06FA7C45A5E293DE88C /* Pod */ = {
+		228C81A3FCC1AC6146D785CFCB236D13 /* GTM64 */ = {
 			isa = PBXGroup;
 			children = (
-				D413B1570433BED21632453DE9C28FCA /* GZIMPaySmartPOS.podspec */,
-				8AD8BE8C014CBB70C5D4F27784E61B40 /* LICENSE */,
-				69B4CE6E14FFF1669919A25D761CDAE7 /* README.md */,
+				FE973D1A5083590A766B97BD5E6C293B /* GTMBase64.h */,
+				86190A508770AFDC735DED84D43779C9 /* GTMBase64.m */,
+			);
+			name = GTM64;
+			path = GZIMPaySmartPOS/Classes/GTM64;
+			sourceTree = "<group>";
+		};
+		36FD31181D5B329E7F3639CC6EF85766 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				07DD74E94AA94D34CF23218758426BD1 /* GZIMPaySmartPOS.podspec */,
+				69BF7FCC56A87EE8B45CB77E9103C870 /* LICENSE */,
+				86B0FEEE73596D94285115F353451EED /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		29EB09EDEEABA0E9F2C9F71F4A38C9D4 /* Support Files */ = {
+		3CFFEE1596FD40AECD28B5AF79DDB4CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2CCA9A9C00BFC6AD07EC37A23FD793B /* ResourceBundle-GZIMPaySmartPOS-Info.plist */,
+				EA83EF5BAF7833A7EC50583345CC5677 /* GZIMPaySmartPOS.bundle */,
+				C25FBD43C525FE66B8C6DB3601668FD1 /* libGZIMPaySmartPOS.a */,
+				52F851697EEA091001CB911F4E8B63E4 /* libPods-GZIMPaySmartPOS_Example.a */,
+				157AFE69AF4DDABBE6EDF260EF1BB3E8 /* libPods-GZIMPaySmartPOS_Tests.a */,
+				AE9D0FDD768B0FEC9C18088F1E8FE673 /* libSocketRocket.a */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GZIMPaySmartPOS";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		408D734CD7DD634D3390CE4FE684BC8D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA623B103EE2B32FFD31CA01193398F1 /* GZIMPaySmartPOS */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		4FF663BB937700D1580BDAB7F3EF0D97 /* Pods */ = {
@@ -153,6 +224,18 @@
 				702DD509C6164C2492FCB546BD72BB07 /* SocketRocket */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6AFD09F2A4A48B72F598173AFDEB45D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4F749EB3F61BB0F04C36A7C601C55CF /* GZIMPaySmartPOS.xcconfig */,
+				8AB249ACBAAE873A01A4DB26E52878D1 /* GZIMPaySmartPOS-dummy.m */,
+				CE49A74797C4810F7BE7E52C1234110C /* GZIMPaySmartPOS-prefix.pch */,
+				AF8CF704B456F316876FE9BF50FDD811 /* ResourceBundle-GZIMPaySmartPOS-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GZIMPaySmartPOS";
 			sourceTree = "<group>";
 		};
 		702DD509C6164C2492FCB546BD72BB07 /* SocketRocket */ = {
@@ -171,31 +254,12 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				988894CCF503AF539DC1BFD09B6ECB62 /* Development Pods */,
+				408D734CD7DD634D3390CE4FE684BC8D /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				4FF663BB937700D1580BDAB7F3EF0D97 /* Pods */,
-				86F40C28C45E461A4BFD78D9E292861D /* Products */,
+				3CFFEE1596FD40AECD28B5AF79DDB4CD /* Products */,
 				F235EDC2F47FDC35964F4370CC066723 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		86F40C28C45E461A4BFD78D9E292861D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BB36F42645724F98922262B6E0979214 /* GZIMPaySmartPOS.bundle */,
-				190263102F9D4D80194D12FFA08B7E49 /* libPods-GZIMPaySmartPOS_Example.a */,
-				C3EF081D233AA6A5BC114F21B6FC4055 /* libPods-GZIMPaySmartPOS_Tests.a */,
-				4892444E7011BA22186CDD314A592936 /* libSocketRocket.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		988894CCF503AF539DC1BFD09B6ECB62 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E27AF229B72ED6043FA0781F6E342145 /* GZIMPaySmartPOS */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		AE9DF18754A836029FFEAC6331E11E05 /* Pods-GZIMPaySmartPOS_Example */ = {
@@ -213,6 +277,26 @@
 			path = "Target Support Files/Pods-GZIMPaySmartPOS_Example";
 			sourceTree = "<group>";
 		};
+		BA623B103EE2B32FFD31CA01193398F1 /* GZIMPaySmartPOS */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8AA612AE99185F6808A4B837E571E /* AES.h */,
+				54A424E53CAE9EB33258804F28A52CB4 /* AES.m */,
+				29A0EE842027C3669D9B4D15C89D9DEC /* GTMDefines.h */,
+				262462D958990800FBDEDA35BAA9DAB5 /* GZIMPaySocketTool.h */,
+				143374444D34C325E76F253E48E575B1 /* GZIMPaySocketTool.m */,
+				8E845113514B9DA3035E693A5161439A /* NSData+CommonCrypto.h */,
+				612F5E58E6A7097998724BA060AF7F8D /* NSData+CommonCrypto.m */,
+				917969ACDEF8BC1D825620AA09A4CFF9 /* NSDictionary+json.h */,
+				78A1A66C251D91C068B0902809F3409C /* NSDictionary+json.m */,
+				228C81A3FCC1AC6146D785CFCB236D13 /* GTM64 */,
+				36FD31181D5B329E7F3639CC6EF85766 /* Pod */,
+				6AFD09F2A4A48B72F598173AFDEB45D9 /* Support Files */,
+			);
+			name = GZIMPaySmartPOS;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		D6D888213905F34217EF1880BE2758BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,16 +305,6 @@
 				50F6DD994291AA39A94BEECAFAF0D785 /* Security.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		E27AF229B72ED6043FA0781F6E342145 /* GZIMPaySmartPOS */ = {
-			isa = PBXGroup;
-			children = (
-				211BB7C773AAC06FA7C45A5E293DE88C /* Pod */,
-				29EB09EDEEABA0E9F2C9F71F4A38C9D4 /* Support Files */,
-			);
-			name = GZIMPaySmartPOS;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		F235EDC2F47FDC35964F4370CC066723 /* Targets Support Files */ = {
@@ -260,25 +334,56 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2C045536F563F70AE3532C946644950D /* Headers */ = {
+		2BA3EDAF57A88E0176370E451E0687AF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A3376C6CD10EE14A6A4D19DCB6B4F34 /* SocketRocket.h in Headers */,
-				E75F053672E6C9B65EAF08E60F7F9D25 /* SRWebSocket.h in Headers */,
+				8C914FEBA3ABB00C3A1077CB4265438E /* SocketRocket.h in Headers */,
+				199A5C26285E082CF9CE8AB594EEF6FC /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AA43BAC1459C3588BF5D1F20A350E3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95FB63C097EB581919A18C0D3FF171D1 /* AES.h in Headers */,
+				E474A8FD340044D4E8805E8AD2D36683 /* GTMBase64.h in Headers */,
+				B2E10568DFE9E99402D6884DA936A341 /* GTMDefines.h in Headers */,
+				7F8DCADE79ABC0751843B25369C8AC0D /* GZIMPaySocketTool.h in Headers */,
+				D9FC5A912FF641CBFD0B3FAE4C333934 /* NSData+CommonCrypto.h in Headers */,
+				1DEFB7A74C87AC9A128DA9CC19BAE7B0 /* NSDictionary+json.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		12F2F0345AACFDAA23C615995E569123 /* GZIMPaySmartPOS-GZIMPaySmartPOS */ = {
+		03FC5103E55EC005CE90018301916C10 /* Pods-GZIMPaySmartPOS_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99215AC95EA35A8D180727BF1016D768 /* Build configuration list for PBXNativeTarget "GZIMPaySmartPOS-GZIMPaySmartPOS" */;
+			buildConfigurationList = 376E64B016ACFF5F37BA1C417C7174ED /* Build configuration list for PBXNativeTarget "Pods-GZIMPaySmartPOS_Example" */;
 			buildPhases = (
-				2C1CA578F1AD1C6CE82B592AB2023AAF /* Sources */,
-				17B23D009961F8EC7AF154E6AE53A822 /* Frameworks */,
-				80D0FB1A7B613E815D8E3EEF0CD97058 /* Resources */,
+				FA30FAC1B57CB50017F979C2A45B90B8 /* Sources */,
+				5A369D829CE40B8F77B75B51DC886D61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CE37FFD87C3B2C7A7A90A07CB673540 /* PBXTargetDependency */,
+				0D51DC28A33077B597C53E672255072A /* PBXTargetDependency */,
+			);
+			name = "Pods-GZIMPaySmartPOS_Example";
+			productName = "Pods-GZIMPaySmartPOS_Example";
+			productReference = 52F851697EEA091001CB911F4E8B63E4 /* libPods-GZIMPaySmartPOS_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0A2D9B0E4FCDE85CB73A28E703B47E9D /* GZIMPaySmartPOS-GZIMPaySmartPOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B9071F28925F8BDF1F39A63ACC1C88 /* Build configuration list for PBXNativeTarget "GZIMPaySmartPOS-GZIMPaySmartPOS" */;
+			buildPhases = (
+				C6DD393BF7E91F39235E08D5F72ABA33 /* Sources */,
+				B09D252F77AD19A56BBF2C23ED3DFFB5 /* Frameworks */,
+				679DED65E2F273D253397A43B44C70B1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -286,26 +391,8 @@
 			);
 			name = "GZIMPaySmartPOS-GZIMPaySmartPOS";
 			productName = "GZIMPaySmartPOS-GZIMPaySmartPOS";
-			productReference = BB36F42645724F98922262B6E0979214 /* GZIMPaySmartPOS.bundle */;
+			productReference = EA83EF5BAF7833A7EC50583345CC5677 /* GZIMPaySmartPOS.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		51A3B0389A7C4558868401EA1F5C1BBB /* Pods-GZIMPaySmartPOS_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ABAAAB09D0E9D08ECD75DA0752B1E12D /* Build configuration list for PBXNativeTarget "Pods-GZIMPaySmartPOS_Example" */;
-			buildPhases = (
-				C70AA64677C394811DAFECC96FD625A7 /* Sources */,
-				239B7CFD5A56D747D35D785B5B42F3BC /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				69A54E6188716CD7A9C938A06AACA829 /* PBXTargetDependency */,
-				9472168A4C4826F145664F42A13C5552 /* PBXTargetDependency */,
-			);
-			name = "Pods-GZIMPaySmartPOS_Example";
-			productName = "Pods-GZIMPaySmartPOS_Example";
-			productReference = 190263102F9D4D80194D12FFA08B7E49 /* libPods-GZIMPaySmartPOS_Example.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 		5EF26D5E04C59B52EDBACC8A9836BC09 /* Pods-GZIMPaySmartPOS_Tests */ = {
 			isa = PBXNativeTarget;
@@ -320,16 +407,16 @@
 			);
 			name = "Pods-GZIMPaySmartPOS_Tests";
 			productName = "Pods-GZIMPaySmartPOS_Tests";
-			productReference = C3EF081D233AA6A5BC114F21B6FC4055 /* libPods-GZIMPaySmartPOS_Tests.a */;
+			productReference = 157AFE69AF4DDABBE6EDF260EF1BB3E8 /* libPods-GZIMPaySmartPOS_Tests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9855DB0E35100151C280FFD6D28C8DB4 /* SocketRocket */ = {
+		905A8214FE4F7AEA6609BF491789BE73 /* SocketRocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFCFABC9710464F3A79E7F37C7D50530 /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildConfigurationList = BF5B4D781C9BF2F203DAA4CB83BF978D /* Build configuration list for PBXNativeTarget "SocketRocket" */;
 			buildPhases = (
-				CD3F0ACB02D0B46A00244A66D623072A /* Sources */,
-				7FB44DA6B35367E7C6DEB49C173EF246 /* Frameworks */,
-				2C045536F563F70AE3532C946644950D /* Headers */,
+				8FA92D82D0D83152BDCDD2CA1B9CDE8F /* Sources */,
+				75D428CA410CDA9F7D4D2E10CEEF89EE /* Frameworks */,
+				2BA3EDAF57A88E0176370E451E0687AF /* Headers */,
 			);
 			buildRules = (
 			);
@@ -337,7 +424,26 @@
 			);
 			name = SocketRocket;
 			productName = SocketRocket;
-			productReference = 4892444E7011BA22186CDD314A592936 /* libSocketRocket.a */;
+			productReference = AE9D0FDD768B0FEC9C18088F1E8FE673 /* libSocketRocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B89BE311AD707DE0EBA631982F463745 /* GZIMPaySmartPOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFDA4D799B45E501C6EEC65B0C1AECE /* Build configuration list for PBXNativeTarget "GZIMPaySmartPOS" */;
+			buildPhases = (
+				683ABD5191FF4F2340D44DFBB54C03C6 /* Sources */,
+				2001E55E3CE2B01F86E5EBD579072A52 /* Frameworks */,
+				4AA43BAC1459C3588BF5D1F20A350E3E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B13082094ED063814B5454BCE8920DE /* PBXTargetDependency */,
+				31F933F962468F22BB7F2AEAD386D778 /* PBXTargetDependency */,
+			);
+			name = GZIMPaySmartPOS;
+			productName = GZIMPaySmartPOS;
+			productReference = C25FBD43C525FE66B8C6DB3601668FD1 /* libGZIMPaySmartPOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -357,20 +463,21 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 86F40C28C45E461A4BFD78D9E292861D /* Products */;
+			productRefGroup = 3CFFEE1596FD40AECD28B5AF79DDB4CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12F2F0345AACFDAA23C615995E569123 /* GZIMPaySmartPOS-GZIMPaySmartPOS */,
-				51A3B0389A7C4558868401EA1F5C1BBB /* Pods-GZIMPaySmartPOS_Example */,
+				B89BE311AD707DE0EBA631982F463745 /* GZIMPaySmartPOS */,
+				0A2D9B0E4FCDE85CB73A28E703B47E9D /* GZIMPaySmartPOS-GZIMPaySmartPOS */,
+				03FC5103E55EC005CE90018301916C10 /* Pods-GZIMPaySmartPOS_Example */,
 				5EF26D5E04C59B52EDBACC8A9836BC09 /* Pods-GZIMPaySmartPOS_Tests */,
-				9855DB0E35100151C280FFD6D28C8DB4 /* SocketRocket */,
+				905A8214FE4F7AEA6609BF491789BE73 /* SocketRocket */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		80D0FB1A7B613E815D8E3EEF0CD97058 /* Resources */ = {
+		679DED65E2F273D253397A43B44C70B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,10 +487,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C1CA578F1AD1C6CE82B592AB2023AAF /* Sources */ = {
+		683ABD5191FF4F2340D44DFBB54C03C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24350F10A2186BFF71C403DE33FF86DC /* AES.m in Sources */,
+				296BBD4263588E42F7B2718BA9EA3648 /* GTMBase64.m in Sources */,
+				81EA476D1DFE72CE8551E9AE26F1249E /* GZIMPaySmartPOS-dummy.m in Sources */,
+				8BE4B25C86EE9FDDD3D0D9E131A3E3ED /* GZIMPaySocketTool.m in Sources */,
+				7E63266DEF1D7EEDDCECD34233606E42 /* NSData+CommonCrypto.m in Sources */,
+				5A58E9EB9AAF60F5E15B3113C0ABF168 /* NSDictionary+json.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,41 +508,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C70AA64677C394811DAFECC96FD625A7 /* Sources */ = {
+		8FA92D82D0D83152BDCDD2CA1B9CDE8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9B4409052AACF2DFA4A70244B486B52 /* Pods-GZIMPaySmartPOS_Example-dummy.m in Sources */,
+				9EB6BC43D2AC0F2AA60180FA8EEBBAE1 /* SocketRocket-dummy.m in Sources */,
+				FDD4FE71D2442399A91758E862062E9F /* SRWebSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD3F0ACB02D0B46A00244A66D623072A /* Sources */ = {
+		C6DD393BF7E91F39235E08D5F72ABA33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44F083045697D5BFFA0C301F7A3D4B99 /* SocketRocket-dummy.m in Sources */,
-				DDDC8D827B843102F3400E650A147FA8 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA30FAC1B57CB50017F979C2A45B90B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51034D93C1DD8199EAEA4E46C752CBD /* Pods-GZIMPaySmartPOS_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		69A54E6188716CD7A9C938A06AACA829 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GZIMPaySmartPOS-GZIMPaySmartPOS";
-			target = 12F2F0345AACFDAA23C615995E569123 /* GZIMPaySmartPOS-GZIMPaySmartPOS */;
-			targetProxy = 9194A8880F42759298C5FC62F9C5925E /* PBXContainerItemProxy */;
-		};
-		9472168A4C4826F145664F42A13C5552 /* PBXTargetDependency */ = {
+		0D51DC28A33077B597C53E672255072A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SocketRocket;
-			target = 9855DB0E35100151C280FFD6D28C8DB4 /* SocketRocket */;
-			targetProxy = DAA0F1BCCEBD117BECAE9B540893D1D3 /* PBXContainerItemProxy */;
+			target = 905A8214FE4F7AEA6609BF491789BE73 /* SocketRocket */;
+			targetProxy = 9822C0EA1CA00EA92B20BC4B67D39836 /* PBXContainerItemProxy */;
+		};
+		31F933F962468F22BB7F2AEAD386D778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 905A8214FE4F7AEA6609BF491789BE73 /* SocketRocket */;
+			targetProxy = F2BBBF0B19CAAF975882D692B36BD680 /* PBXContainerItemProxy */;
+		};
+		7CE37FFD87C3B2C7A7A90A07CB673540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GZIMPaySmartPOS;
+			target = B89BE311AD707DE0EBA631982F463745 /* GZIMPaySmartPOS */;
+			targetProxy = DF9C7DA5C4F733DF2711905DCBF2B312 /* PBXContainerItemProxy */;
+		};
+		8B13082094ED063814B5454BCE8920DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GZIMPaySmartPOS-GZIMPaySmartPOS";
+			target = 0A2D9B0E4FCDE85CB73A28E703B47E9D /* GZIMPaySmartPOS-GZIMPaySmartPOS */;
+			targetProxy = D74216A01439C4865D35D673E77EA7F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		09FCD96790D1552C14D9EC4E40513851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F749EB3F61BB0F04C36A7C601C55CF /* GZIMPaySmartPOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GZIMPaySmartPOS";
+				INFOPLIST_FILE = "Target Support Files/GZIMPaySmartPOS/ResourceBundle-GZIMPaySmartPOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = GZIMPaySmartPOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		147546114B0A9744D6815C88D7CABF6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A074C5FDDC18C5986AEE00DFF98A7018 /* Pods-GZIMPaySmartPOS_Tests.release.xcconfig */;
@@ -452,22 +600,7 @@
 			};
 			name = Release;
 		};
-		16181B91FDC8E4C248865A8CE13A181E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GZIMPaySmartPOS";
-				INFOPLIST_FILE = "Target Support Files/GZIMPaySmartPOS/ResourceBundle-GZIMPaySmartPOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = GZIMPaySmartPOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		5E3BEA84A80F9A80657AACCCCAF62187 /* Release */ = {
+		55CCCBBA8266F49525F03C5C8CE2A631 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6746E2C08A05267C5F649E9B0C12CC2 /* Pods-GZIMPaySmartPOS_Example.release.xcconfig */;
 			buildSettings = {
@@ -489,8 +622,9 @@
 			};
 			name = Release;
 		};
-		64AB8B98BE7A2899760CED17CF9ED429 /* Release */ = {
+		672A25C6FF5FCF7372B1A553531D8FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F749EB3F61BB0F04C36A7C601C55CF /* GZIMPaySmartPOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GZIMPaySmartPOS";
@@ -502,32 +636,30 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
-		6BBB986DEBD99192BD32DEF9E73D667D /* Debug */ = {
+		8264BB36F1533E781960782610843EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D271E1ACC894BAE9E6FC8AAAF017C9F4 /* SocketRocket.xcconfig */;
+			baseConfigurationReference = BE0DA74404C0FAFA1E31BE71C9D498A7 /* Pods-GZIMPaySmartPOS_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SocketRocket;
-				PRODUCT_NAME = SocketRocket;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		78DAA36C415F67DCDB14BDF66638ABB6 /* Debug */ = {
+		887CD2515EE9CA10F81B3087B3FAAB5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B99DBA666A7D2C2EE7BF45C835DEC26 /* Pods-GZIMPaySmartPOS_Example.debug.xcconfig */;
 			buildSettings = {
@@ -548,7 +680,7 @@
 			};
 			name = Debug;
 		};
-		7DD6826B467F533B98F122CAFDFE895F /* Release */ = {
+		896A03F9576D9D4372CD401C3523FD04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D271E1ACC894BAE9E6FC8AAAF017C9F4 /* SocketRocket.xcconfig */;
 			buildSettings = {
@@ -567,28 +699,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8264BB36F1533E781960782610843EE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE0DA74404C0FAFA1E31BE71C9D498A7 /* Pods-GZIMPaySmartPOS_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -714,14 +824,103 @@
 			};
 			name = Release;
 		};
+		CE1B40A2EB4C60EFABA34982B04A6BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D271E1ACC894BAE9E6FC8AAAF017C9F4 /* SocketRocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SocketRocket;
+				PRODUCT_NAME = SocketRocket;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1DA8B5D9B9906CC0739A9745728B229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F749EB3F61BB0F04C36A7C601C55CF /* GZIMPaySmartPOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GZIMPaySmartPOS/GZIMPaySmartPOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GZIMPaySmartPOS;
+				PRODUCT_NAME = GZIMPaySmartPOS;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8AE8E6010EA5B06E6F8E2684C761B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F749EB3F61BB0F04C36A7C601C55CF /* GZIMPaySmartPOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GZIMPaySmartPOS/GZIMPaySmartPOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GZIMPaySmartPOS;
+				PRODUCT_NAME = GZIMPaySmartPOS;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09B9071F28925F8BDF1F39A63ACC1C88 /* Build configuration list for PBXNativeTarget "GZIMPaySmartPOS-GZIMPaySmartPOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				672A25C6FF5FCF7372B1A553531D8FE7 /* Debug */,
+				09FCD96790D1552C14D9EC4E40513851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
 				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376E64B016ACFF5F37BA1C417C7174ED /* Build configuration list for PBXNativeTarget "Pods-GZIMPaySmartPOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887CD2515EE9CA10F81B3087B3FAAB5B /* Debug */,
+				55CCCBBA8266F49525F03C5C8CE2A631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -735,29 +934,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99215AC95EA35A8D180727BF1016D768 /* Build configuration list for PBXNativeTarget "GZIMPaySmartPOS-GZIMPaySmartPOS" */ = {
+		9FFDA4D799B45E501C6EEC65B0C1AECE /* Build configuration list for PBXNativeTarget "GZIMPaySmartPOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				16181B91FDC8E4C248865A8CE13A181E /* Debug */,
-				64AB8B98BE7A2899760CED17CF9ED429 /* Release */,
+				D8AE8E6010EA5B06E6F8E2684C761B57 /* Debug */,
+				D1DA8B5D9B9906CC0739A9745728B229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABAAAB09D0E9D08ECD75DA0752B1E12D /* Build configuration list for PBXNativeTarget "Pods-GZIMPaySmartPOS_Example" */ = {
+		BF5B4D781C9BF2F203DAA4CB83BF978D /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78DAA36C415F67DCDB14BDF66638ABB6 /* Debug */,
-				5E3BEA84A80F9A80657AACCCCAF62187 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFCFABC9710464F3A79E7F37C7D50530 /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6BBB986DEBD99192BD32DEF9E73D667D /* Debug */,
-				7DD6826B467F533B98F122CAFDFE895F /* Release */,
+				896A03F9576D9D4372CD401C3523FD04 /* Debug */,
+				CE1B40A2EB4C60EFABA34982B04A6BD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

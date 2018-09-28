@@ -1,5 +1,5 @@
 //
-//  AESCrypt.h
+//  AESCrypt.m
 //  Gurpartap Singh
 //
 //  Created by Gurpartap Singh on 06/05/12.
@@ -27,12 +27,32 @@
 // 	WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import "AES.h"
 
-@interface AES : NSObject
 
-+ (NSString *)encrypt:(NSString *)message;
-+ (NSString *)decrypt:(NSString *)base64EncodedString;
+#import "NSData+CommonCrypto.h"
+
+
+
+@implementation AES
+
++ (NSString *)encrypt:(NSString *)message {
+//  NSData *encryptedData = [[message dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptedDataUsingKey:[[password dataUsingEncoding:NSUTF8StringEncoding] SHA256Hash] error:nil];
+//  NSString *base64EncodedString = [NSString base64StringFromData:encryptedData length:[encryptedData length]];
+//  return base64EncodedString;
+    
+    return [NSData AES128Encrypt:message];
+    
+    
+    
+}
+
++ (NSString *)decrypt:(NSString *)base64EncodedString {
+//  NSData *encryptedData = [NSData base64DataFromString:base64EncodedString];
+//  NSData *decryptedData = [encryptedData decryptedAES256DataUsingKey:[[password dataUsingEncoding:NSUTF8StringEncoding] SHA256Hash] error:nil];
+//  return [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
+    return [NSData AES128Decrypt:base64EncodedString];
+}
 
 
 
