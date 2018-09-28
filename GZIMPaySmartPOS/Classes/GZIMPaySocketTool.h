@@ -9,10 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <SocketRocket.h>
 
-extern NSString * const kNeedPayOrderNote;
-extern NSString * const kWebSocketDidOpenNote;
-extern NSString * const kWebSocketDidCloseNote;
-extern NSString * const kWebSocketdidReceiveMessageNote;
 
 
 @protocol webSocketContectDidDelegate <NSObject>
@@ -49,8 +45,15 @@ extern NSString * const kWebSocketdidReceiveMessageNote;
  */
 -(void)WebSocketOpenWithIP:(NSString *)IPString withSocketDelegate:(id<webSocketContectDidDelegate>)delegate;
 
-- (void)WebSocketClose;//关闭连接
-- (void)sendData:(id)data;//发送数据
+/* 关闭连接 */
+- (void)WebSocketClose;
+
+/**
+ 发送数据
+
+ @param data 数据
+ */
+- (void)sendData:(id)data;
 
 
 @end

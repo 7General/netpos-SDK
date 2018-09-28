@@ -15,10 +15,6 @@ block();\
 dispatch_async(dispatch_get_main_queue(), block);\
 }
 
-NSString * const kNeedPayOrderNote               = @"kNeedPayOrderNote";
-NSString * const kWebSocketDidOpenNote           = @"kWebSocketdidReceiveMessageNote";
-NSString * const kWebSocketDidCloseNote          = @"kWebSocketDidCloseNote";
-NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessageNote";
 
 @interface GZIMPaySocketTool()<SRWebSocketDelegate>
 {
@@ -93,8 +89,8 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
                 [self reConnect];
             }
         } else {
-            NSLog(@"没网络，发送失败，一旦断网 socket 会被我设置 nil 的");
-            NSLog(@"其实最好是发送前判断一下网络状态比较好，我写的有点晦涩，socket==nil来表示断网");
+            // 没网就会置为nil
+            
         }
     });
 }
@@ -124,11 +120,11 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
 //取消心跳
 - (void)destoryHeartBeat {
     dispatch_main_async_safe(^{
-        if (heartBeat) {
-            if ([heartBeat respondsToSelector:@selector(isValid)]){
-                if ([heartBeat isValid]){
-                    [heartBeat invalidate];
-                    heartBeat = nil;
+        if (self->heartBeat) {
+            if ([self->heartBeat respondsToSelector:@selector(isValid)]){
+                if ([self->heartBeat isValid]){
+                    [self->heartBeat invalidate];
+                    self->heartBeat = nil;
                 }
             }
         }
@@ -140,9 +136,9 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
     dispatch_main_async_safe(^{
         [self destoryHeartBeat];
         //心跳设置为3分钟，NAT超时一般为5分钟
-        heartBeat = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(sentheart) userInfo:nil repeats:YES];
+        self->heartBeat = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(sentheart) userInfo:nil repeats:YES];
         //和服务端约定好发送什么作为心跳标识，尽可能的减小心跳包大小
-        [[NSRunLoop currentRunLoop] addTimer:heartBeat forMode:NSRunLoopCommonModes];
+        [[NSRunLoop currentRunLoop] addTimer:self->heartBeat forMode:NSRunLoopCommonModes];
     })
 }
 
@@ -185,7 +181,6 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
         NSLog(@"************************** socket连接断开************************** ");
         NSLog(@"被关闭连接，code:%ld,reason:%@,wasClean:%d",(long)code,reason,wasClean);
         [self WebSocketClose];
-        [[NSNotificationCenter defaultCenter] postNotificationName:kWebSocketDidCloseNote object:nil];
     }
 }
 
@@ -216,8 +211,6 @@ NSString * const kWebSocketdidReceiveMessageNote = @"kWebSocketdidReceiveMessage
     return self.socket.readyState;
 }
 
--(void)dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
+
 
 @end
