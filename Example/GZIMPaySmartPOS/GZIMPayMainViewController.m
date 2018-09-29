@@ -50,6 +50,7 @@
     self.logInfo.textColor = [UIColor grayColor];
     [self.view addSubview:self.logInfo];
     
+    NSLog(@"%p",__builtin_return_address(0));
     
 }
 - (void)cancleAction {
@@ -85,7 +86,7 @@
     NSDictionary * shopInfo = @{@"directive": @"IpPay",
                                 @"transData":
                                     @{
-                                        @"mhtOrderNo": @"fdsfsfsdfsfsfs",
+                                        @"mhtOrderNo": @"123129898234509234509324093480983409",
                                         @"payType": @"01",
                                         @"orderPrice": @"1",
                                         @"orderName": @"零售 PC 订单"

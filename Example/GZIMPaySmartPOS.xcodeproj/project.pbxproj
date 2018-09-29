@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		224E68AB215CB56F006E6088 /* GZIMPayMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68AA215CB56F006E6088 /* GZIMPayMainViewController.m */; };
-		224E68BB215CDC35006E6088 /* NSDictionary+json.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E68BA215CDC35006E6088 /* NSDictionary+json.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -41,8 +40,6 @@
 /* Begin PBXFileReference section */
 		224E68A9215CB56F006E6088 /* GZIMPayMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZIMPayMainViewController.h; sourceTree = "<group>"; };
 		224E68AA215CB56F006E6088 /* GZIMPayMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZIMPayMainViewController.m; sourceTree = "<group>"; };
-		224E68B9215CDC35006E6088 /* NSDictionary+json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+json.h"; sourceTree = "<group>"; };
-		224E68BA215CDC35006E6088 /* NSDictionary+json.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+json.m"; sourceTree = "<group>"; };
 		343A88D235777448406D4356 /* Pods-GZIMPaySmartPOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZIMPaySmartPOS_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZIMPaySmartPOS_Example/Pods-GZIMPaySmartPOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GZIMPaySmartPOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZIMPaySmartPOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -148,8 +145,6 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				224E68B9215CDC35006E6088 /* NSDictionary+json.h */,
-				224E68BA215CDC35006E6088 /* NSDictionary+json.m */,
 			);
 			name = "Example for GZIMPaySmartPOS";
 			path = GZIMPaySmartPOS;
@@ -369,7 +364,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* GZIMPayAppDelegate.m in Sources */,
-				224E68BB215CDC35006E6088 /* NSDictionary+json.m in Sources */,
 				6003F5A7195388D20070C39A /* GZIMPayViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				224E68AB215CB56F006E6088 /* GZIMPayMainViewController.m in Sources */,
